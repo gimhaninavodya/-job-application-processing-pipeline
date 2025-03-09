@@ -52,7 +52,7 @@ export const uploadFile = async (req, res) => {
           metadata: {
             applicant_name: cleanedCVData.personal_info.name,
             email: cleanedCVData.personal_info.email,
-            status: "testing",
+            status: "prod",
             cv_processed: true,
             processed_timestamp: new Date().toISOString(),
           },
